@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form</title>
+</head>
+<body>
+
+    
+    <form>
+        <input type="text" title="Numbers not allowed only letters are allowed" pattern="^[A-Za-z\s]{1,}[\.]{0,1}[A-Za-z\s]{0,}$" required  placeholder="Enter Name"/>
+
+        <br/><br/>
+        <input type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" maxlength="12"  placeholder="Enter Password" required/>
+
+        <!-- <br/><br/>   
+        <input type="email"  readonly required placeholder="Enter Email"/>
+
+        <br/><br/>   
+        <input type="number" max="50" min="10" required placeholder="Enter Age"/>
+
+        
+
+        <br/><br/>
+        <input type="date" required/>
+
+        <br/><br/>
+        <input type="week" required/>
+
+        <br/><br/>
+        <input type="time" required/>
+
+        <br/><br/>
+        <input type="month" required/>
+
+        <br/><br/>
+        <input type="checkbox" required/> 
+
+        <br/><br/>
+        <input type="radio" required/>
+
+        <br/><br/>
+        <input type="url" required placeholder="enter link"/>
+
+        <br/><br/>
+        <input type="search"/>
+
+        <br/><br/>
+        <input type="color"/>
+
+        <br/><br/>
+        <input type="file"/>
+
+        <br/><br/>
+        <input type="hidden" value="value"/>
+
+        <br/><br/>
+        <textarea rows="5" cols="50" placeholder="Adress"></textarea>
+
+        <br/><br/>
+        <select required>
+            <option value="">Select City</option>
+            <option value="mum">Mumbai</option>
+            <option value="pu" selected>Pune</option>
+            <option value="del">Delhi</option>
+        </select>
+
+-->
+        <br/><br/>
+        10 <input type="range" min="10" max="100"/> 100
+
+ 
+
+
+
+    
+
+        <br/><br/>   
+
+        <button id="bt" onmouseover="changeText()" type="submit">Register</button>
+        <button type="reset" disabled>Clear Form</button>
+        <button type="button">Useless</button>
+    </form>
+
+    
+
+    
+</body>
+</html>
