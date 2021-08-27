@@ -1,0 +1,138 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* global css  */
+
+.container{
+    width: 80%;
+    display: flex;
+    background-color: lightpink;
+
+}
+
+.title{
+    font-family: 'Segoe UI';
+    text-align: center;
+    font-size: 30px;
+}
+
+/* //// */
+.header{
+    width: 100%;
+    height: 70px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    width: 10%;
+    height: 70px;
+    background-color: yellow;
+}
+
+.header_container
+{
+    justify-content: space-between;
+}
+
+.navigation{
+    width: 30%;
+    height: 70px;
+    background-color: red;
+}
+
+.products{
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+}
+
+
+.products_container{
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.product{
+    width: 30%;
+    height: 300px;
+    background-color: green;
+    margin-bottom: 30px;
+    
+}
+
+
+.services{
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services_container{
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+
+.service{
+    width: 45%;
+    height: 300px;
+    background-color: red;
+    margin-bottom: 20px;
+}
+
+@media (max-width:1024px) {
+
+
+    
+
+
+}
+
+
+
+@media (max-width:560px) {
+
+    .container{
+        width: 95%;
+    }    
+
+    .logo{
+        width: 40%;
+    }
+
+    .navigation{
+        display: none;
+    }
+
+    .product{
+        width:100%;
+    }
+
+    .services{
+        flex-direction: column-reverse;
+    }
+
+    .services_container{
+        justify-content: center;
+    }
+
+    .service{
+        width: 90%;
+    }
+
+}
+
+

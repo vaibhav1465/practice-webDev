@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animations</title>
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .carousel{
+            height: 800px;
+            width: 100%;
+            background-color: gray;
+            overflow: hidden;
+        }
+
+        .slider{
+            height: 800px;
+            width: 500%;
+            background-color: red;
+            display: flex;
+            flex-wrap: wrap;
+            animation-name: slider;
+            animation-duration: 16s;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+            animation-delay: 2s;
+        }
+
+        .slider:hover{
+            animation-play-state: paused;
+            cursor: pointer;
+        }
+
+        @keyframes slider {
+
+            12.5%{
+                margin-left: -100%;
+            }
+
+            25%{
+                margin-left: -100%;
+            }
+
+            37.5%{
+                margin-left: -200%;
+            }
+
+            50%{
+                margin-left: -200%;
+            }
+
+            62.5%{
+                margin-left: -300%;
+            }
+
+            75%{
+
+                margin-left: -300%;
+            }
+
+            87.5%{
+                margin-left: -400%;
+            }
+
+            100%{
+                margin-left: -400%;
+            }
+
+        }
+
+
+
+        .banner{
+            width: 20%;
+            height: 800px;
+            background-color: yellow;
+            font-size: 100px;
+            background-size: cover;
+            background-position: center;
+        }
+
+
+        .banner:nth-child(1){
+            background-image: url('https://images.pexels.com/photos/2258536/pexels-photo-2258536.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+        }   
+
+        .banner:nth-child(2){
+            background-image: url('https://images.pexels.com/photos/2113566/pexels-photo-2113566.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+        }   
+
+        .banner:nth-child(3){
+            background-image: url('https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+        }   
+
+        .banner:nth-child(4){
+            background-image: url('https://images.pexels.com/photos/3293148/pexels-photo-3293148.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+        }   
+
+        .banner:nth-child(5){
+            background-image: url('https://images.pexels.com/photos/2258536/pexels-photo-2258536.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+        }   
+
+        
+
+    </style>
+</head>
+<body>
+    
+    
+    <div class="carousel">
+
+        <div class="slider">
+
+            <div class="banner">
+
+            </div>
+            <div class="banner"></div>
+            <div class="banner"></div>
+            <div class="banner"></div>
+            <div class="banner"></div>
+
+        </div>
+
+    </div>
+
+
+</body>
+</html>

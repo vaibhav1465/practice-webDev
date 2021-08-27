@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fading Slider</title>
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .slider{
+            height: 700px;
+            width: 100%;
+            background-color: red;
+        }
+
+        .slider_child{
+            width: 100%;
+            height: 700px;
+            background-color: gray;
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            animation-duration: 25s;
+            animation-timing-function: alternate;
+            animation-play-state: running;
+            animation-iteration-count: infinite;
+            color: white;
+            font-size: 100px;
+            
+        }
+
+
+        .slider_child:nth-child(1){
+            background-image: url('https://images.pexels.com/photos/2258536/pexels-photo-2258536.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+        }   
+
+        .slider_child:nth-child(2){
+            background-image: url('https://images.pexels.com/photos/2113566/pexels-photo-2113566.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+            animation-name: fade4;
+        }   
+
+        .slider_child:nth-child(3){
+            background-image: url('https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+            animation-name: fade3;
+        }   
+
+        .slider_child:nth-child(4){
+            background-image: url('https://images.pexels.com/photos/3293148/pexels-photo-3293148.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+            animation-name: fade2;
+        }   
+
+        .slider_child:nth-child(5){
+            background-image: url('https://images.pexels.com/photos/2258536/pexels-photo-2258536.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+            animation-name: fade1;
+            
+        } 
+
+
+        @keyframes fade1 {
+
+            20%{
+                opacity: 1;
+            }
+
+            40%{
+                opacity: 0;
+            }
+
+            60%{
+                opacity: 0;
+            }
+
+            80%{
+                opacity: 0;
+            }
+
+            100%{
+                opacity: 0;
+            }
+
+            
+        }
+
+
+        @keyframes fade2 {
+
+                20%{
+                    opacity: 0;
+                }
+
+                40%{
+                    opacity: 1;
+                }
+
+                60%{
+                    opacity: 0;
+                }
+
+                80%{
+                    opacity: 0;
+                }
+
+                100%{
+                    opacity: 0;
+                }
+
+
+            }
+
+
+            
+        @keyframes fade3 {
+
+            20%{
+                opacity: 0;
+            }
+
+            40%{
+                opacity: 0;
+            }
+
+            60%{
+                opacity: 1;
+            }
+
+            80%{
+                opacity: 0;
+            }
+
+            100%{
+                opacity: 0;
+            }
+
+
+            }
+
+
+            
+        @keyframes fade4 {
+
+                20%{
+                    opacity: 0;
+                }
+
+                40%{
+                    opacity: 0;
+                }
+
+                60%{
+                    opacity: 0;
+                }
+
+                80%{
+                    opacity: 1;
+                }
+
+                100%{
+                    opacity: 0;
+                }
+
+
+                }
+
+
+
+
+    </style>
+</head>
+<body>
+
+        <div class="slider">
+
+                <div class="slider_child">
+                    
+                </div>
+                <div class="slider_child"></div>
+                <div class="slider_child"></div>
+                <div class="slider_child"></div>
+                <div class="slider_child">
+                    Paradise on earth
+                </div>
+
+
+        </div>
+
+</body>
+</html>

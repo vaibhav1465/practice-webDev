@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Positions</title>
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .parent{
+            height: 700px;
+            width: 500px;
+            border: 10px solid black;
+            margin: 30px;
+            position: relative;
+            
+
+        }
+
+        .one{
+            height: 200px;
+            width: 300px;
+            background-color: red;
+        }
+
+        .two{
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            /* position: relative; */
+            position: absolute;
+            top:0;
+            left:0;
+             
+        }
+
+        .three{
+            height: 2000px;
+            width: 200px;
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+
+
+        <div class="parent">
+
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+
+        </div>
+
+
+</body>
+</html>

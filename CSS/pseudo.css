@@ -1,0 +1,68 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.one{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+}
+
+.one:hover{
+    background-color: green;
+    width: 700px;
+    border: 20px solid black;
+
+}  
+
+.one:active {
+
+    background-color: yellow;
+
+}
+
+a:visited {
+    color:red;
+}
+
+
+input:focus{
+    background-color: black;
+}
+
+
+ul>li:not(:first-child) {
+    color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
