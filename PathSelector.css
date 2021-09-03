@@ -1,0 +1,19 @@
+#a1, #a2, #a3, #a4{
+            color:black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color:transparent;
+            border-radius:25px;
+            align-content: center;
+            font-size: 25px;
+            padding: 5px;
+            margin: 5px;
+            width: 100%;
+
+}
+.tablePage{
+  float: right;
+  border:5px solid black;
+  border-radius:25px;
+  padding:25px;
+  margin: 100px;
+}
