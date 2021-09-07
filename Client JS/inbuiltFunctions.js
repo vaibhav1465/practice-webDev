@@ -21,3 +21,18 @@
         // console.log(Math.sin(45));
         // console.log(Math.abs(-1));
         // console.log(Math.log(2))
+// String Functions 
+
+        
+
+        // console.log(data.length);
+        // console.log(data.substring(2,6));
+        // console.log(data.substr(2,6));
+        // console.log(data.replace(/e/g,"jay"));
+        // console.log(data.toLowerCase());
+        // console.log(data.toUpperCase());
+        // console.log(data.charAt(3));
+        // console.log(''.charCodeAt(0));
+        // console.log(data.indexOf('z'));
+        // console.log(data.includes("rg"));
+        // console.log(data.concat("Saurabh"));
