@@ -36,3 +36,90 @@
         // console.log(data.indexOf('z'));
         // console.log(data.includes("rg"));
         // console.log(data.concat("Saurabh"));
+        
+         // array functions 
+
+        let avengers=
+        [
+            {id:1,name:"Thor",planet:"Asgard",strength:100},
+            {id:2,name:"Ironman",planet:"Earth",strength:78},
+            {id:3,name:"Captain America",planet:"Earth",strength:45}
+        ];
+
+        // avengers.sort((a,b)=>{
+        //     return b.strength-a.strength;
+        // });
+
+        // console.log(avengers);
+
+        // let data=[];
+        // for(let i=0;i<avengers.length;i++)
+        // {
+        //     if(avengers[i].planet==="Earth")
+        //     data.push(avengers[i].name);
+        // }
+
+
+        // forEach 
+
+     
+        // avengers.forEach(function(avenger,index){
+        //      console.log(avenger.id);
+        // })
+
+
+    //    let data = avengers.map(function(avenger,index){
+           
+    //      return avenger.name
+                
+    //     })
+
+
+        // let data=avengers.filter((avenger,index)=>{
+
+
+        // })
+
+
+        // let numbers=[34,12,56,34,78,21,1];
+
+        // numbers.sort((a,b)=>{
+        //     return a-b;
+        // });
+
+        // console.log(numbers);
+
+        // slice , splice 
+
+
+        // slice (a,b)
+        // it doesnt hamper originbal array 
+        // a - index position  from where u want to start 
+        // b - the Numberr of elements u want to cut but counting starts from the first element
+
+        // splice(a,b)
+        // it hampers the og array 
+        // a - index position  from where u want to start 
+        // b - the Numberr of elements u want to cut but counting starts from the a position
+        
+
+       
+
+       
+
+       
+
+
+
+
+       
+        
+        
+
+
+
+        
+
+    </script>
+</body>
+</html>
