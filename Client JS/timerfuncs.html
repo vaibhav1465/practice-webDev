@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Timer's Function</title>
+</head>
+<body>
+<div class="p" id="p">Vaibhav</div>
+    <script>
+        //  a=1;
+        //  abc=()=>{
+        //      console.log("vaibhav");
+        //     // a=2;
+        //     a++;
+        //     if(a==3)
+        //  clearTimeout(b);
+            // document.getElementById("p").innerHTML="vaibhav";
+        //  }
+        //  setTimeout("abc()", 3000);
+        //  console.log(abc);
+        //  b=setInterval(abc, 1000);
+        //  if(a==3)
+        //  clearTimeout(b);
+    //     c=setTimeout(()=>{
+    //  console.log(a+a);
+    //    },3000);
+       
+    //     b=setInterval(() => {
+    //      console.log(a);
+    //      a++
+    //      if(a==4){
+    //     clearInterval(b);
+    //     // clearTimeout(c);
+    //      }
+    //  }, 1000);
+//    console.log(b);
+a=1;
+abc=()=>{
+   document.getElementById("p").style.marginLeft=`${a}px`;
+   document.getElementById("p").style.marginTop=`${a}px`;
+   a++;
+    r=requestAnimationFrame(abc);
+    if(a===300)
+    cancelAnimationFrame(r);
+}
+abc();
+
+    </script>
+</body>
+</html>
