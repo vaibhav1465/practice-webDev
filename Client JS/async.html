@@ -20,15 +20,49 @@
            let promise = new Promise((a,b)=>{
            let task=true;
            if(task==true){
-               a("vaibhav");
+               a(["vaibhav","kaushal","tushar","chimpu"]);
              }
            else
-           b("error");
+           b("user error");
          
        });
        return promise;
     }
+    let getPost=(users)=>{
+           let promise = new Promise((a,b)=>{
+           let task=true;
+           if(task==true){
+               a("100 posts");
+             }
+           else
+           b("post error");
+         
+       });
+       return promise;
+    }
+
+    let getComments=(posts)=>{
+           let promise = new Promise((a,b)=>{
+           let task=false;
+           if(task==true){
+               a("100 comments");
+             }
+           else
+           b("comments error");
+         
+       });
+       return promise;
+    }
+    
+
+
        getUser().then((d)=>{
+           console.log(d);
+           return getPost(d);
+       }).then((d)=>{
+           console.log(d);
+           return getComments(d);
+       }).then((d)=>{
            console.log(d);
        }).catch((e)=>{
            console.log(e);
