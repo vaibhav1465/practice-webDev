@@ -43,7 +43,25 @@
 //         .catch((error)=>{
 //          console.log(error);
 //         })
-
+    // to create new field using Post
+    let data={
+        name:"vaibhav",
+        age:26
+    }
+      fetch("https://jsonplaceholder.typicode.com/users",{
+          "method":"POST",
+          "Content-type":"application/json",
+          "body":"data.stringify()"
+      })
+        .then((response)=>{
+             return response.json();
+        })
+        .then((data)=>{
+           console.log(data);
+        })
+        .catch((error)=>{
+         console.log(error);
+        })
 
 
     </script>
